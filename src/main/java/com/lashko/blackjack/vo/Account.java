@@ -2,23 +2,24 @@ package com.lashko.blackjack.vo;
 
 public class Account {
 
-	private int id;
+	private Long id;
 	
-	private int ammount;
+	private Double ammount;
 
-	public int getAmmount() {
-		return ammount;
-	}
-
-	public void setAmmount(int ammount) {
-		this.ammount = ammount;
-	}
-
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
+
+	public Double getAmmount() {
+		return ammount;
+	}
+
+	public void setAmmount(Double ammount) {
+		this.ammount = ammount;
+	}
+
 }
