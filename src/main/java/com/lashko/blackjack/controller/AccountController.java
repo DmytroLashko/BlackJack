@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.lashko.blackjack.service.AccountService;
 import com.lashko.blackjack.vo.Account;
 
-//@RestController
-@Controller
+@RestController
+//@Controller
 @RequestMapping("/account")
 public class AccountController {
 
-//	private final AccountService accountService;
-	@Autowired
-	AccountService accountService;
+	private final AccountService accountService;
+//	@Autowired
+//	AccountService accountService;
 
 	public AccountController(final AccountService accountService) {
 		this.accountService = accountService;
