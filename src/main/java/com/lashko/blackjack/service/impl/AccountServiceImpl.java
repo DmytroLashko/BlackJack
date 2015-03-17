@@ -4,6 +4,8 @@ import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.lashko.blackjack.dao.AccountDao;
 import com.lashko.blackjack.entity.Account;
@@ -15,7 +17,7 @@ public class AccountServiceImpl implements AccountService {
 	@Autowired
 	private AccountDao accountDao;
 
-	// @Transactional(readOnly = false, propagation = Propagation.REQUIRED)
+	@Transactional(readOnly = false, propagation = Propagation.REQUIRED)
 	@Override
 	public Account create(Account account) {
 		return accountDao.create(account);
