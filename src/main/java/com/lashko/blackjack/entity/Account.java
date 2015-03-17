@@ -15,6 +15,7 @@ public class Account {
 	@Column(name="accountId")
 	private Long id;
 
+	@Column
 	private Double ammount;
 
 	public Long getId() {

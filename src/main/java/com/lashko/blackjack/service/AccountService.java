@@ -1,8 +1,17 @@
 package com.lashko.blackjack.service;
 
-import com.lashko.blackjack.vo.Account;
+import java.util.Set;
+
+import com.lashko.blackjack.entity.Account;
 
 public interface AccountService {
 
-	public Account saveAccount(Account account);
+	Account create(Account account);
+
+	Account getById(Long id);
+
+	Set<Account> getAll();
+
+	void updateAccount(Account account);
+
 }
