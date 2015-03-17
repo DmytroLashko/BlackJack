@@ -16,7 +16,7 @@ public abstract class AbstractDaoImpl<E> implements AbstractDao<E> {
 
 	private Class<? extends E> domainClass;
 
-	@Autowired
+	//@Autowired
 	private SessionFactory sessionFactory;
 
 	public AbstractDaoImpl() {

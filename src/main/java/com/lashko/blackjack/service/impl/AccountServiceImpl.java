@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.lashko.blackjack.dao.AccountDao;
 import com.lashko.blackjack.entity.Account;
 import com.lashko.blackjack.service.AccountService;
-
 @Service("accountService")
 public class AccountServiceImpl implements AccountService {
 

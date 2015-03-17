@@ -18,15 +18,15 @@ import com.lashko.blackjack.service.AccountService;
 @RequestMapping("/account")
 public class AccountController {
 
-//	private final AccountService accountService;
+	//private final AccountService accountService;
 	@Autowired
 	AccountService accountService;
+	
+//	public AccountController(AccountService accountService) {
+//		this.accountService = accountService;
+//	}
 
-	public AccountController(final AccountService accountService) {
-		this.accountService = accountService;
-	}
-
-	@RequestMapping(value = "/new", method = RequestMethod.GET)
+	@RequestMapping(value = "/new", method = RequestMethod.POST)
 	public Account createAccount(@RequestBody @Valid final Account account) {
 		return accountService.create(account);
 	}
