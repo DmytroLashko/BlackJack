@@ -1,6 +1,6 @@
 package com.lashko.blackjack.vo;
 
-public class Account {
+public class AccountHolder {
 
 	private Long id;
 	

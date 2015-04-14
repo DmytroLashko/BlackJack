@@ -8,12 +8,12 @@ import com.lashko.blackjack.entity.Account;
 
 public interface AccountService {
 
-	Account create(Account account);
+	Account save(double ammount);
 
-	Account getById(Long id);
-
-	Set<Account> getAll();
-
-	void updateAccount(Account account);
+//	Account getById(Long id);
+//
+//	Set<Account> getAll();
+//
+//	void updateAccount(Account account);
 
 }

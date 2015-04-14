@@ -12,10 +12,10 @@ import javax.persistence.Table;
 public class Account {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="accountId")
+	@Column(name="accountId", nullable = false, updatable = false )
 	private Long id;
 
-	@Column
+	@Column(name="ammount")
 	private Double ammount;
 
 	public Long getId() {
